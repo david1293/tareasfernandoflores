@@ -10,6 +10,6 @@ package tipos;
  *
  * @author T107
  */
-public class java {
+public class tipos {
     
 }
