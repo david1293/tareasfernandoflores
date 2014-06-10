@@ -9,10 +9,10 @@ public class Tipos {
     public static void main (String ags[]){
     //declaramos un arreglo de enteros 
         
-       // int []arreglo1=new int[3];
+        // int []arreglo1=new int[3];
         int []arreglo1={-20,7,8,54};
         
-      //  System.out.println(arreglo1[0]);
+        //  System.out.println(arreglo1[0]);
         
         //int algo; se tiene que declarar como atributo y no se declara dentro del main 
         //System.out.println(algo); 
