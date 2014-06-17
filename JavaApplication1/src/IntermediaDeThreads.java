@@ -14,17 +14,24 @@ public class IntermediaDeThreads implements Runnable{
        t1.start(); 
        t2.start(); 
        t3.start(); 
-       t1.setName("impresion "); 
-       t2.setName("conexion  "); 
-       t3.setName("guardar "); 
+       t1.setName("impresion"); 
+       t2.setName("conexion"); 
+       t3.setName("guardar"); 
     }
     
     @Override 
     public void run(){
         
+                      try { // es una excepcion para poner a dormir a un Thread 
+          
       
-        System.out.println("Soy un Thread intermedio "); 
+       System.out.println("Soy un Thread intermedio "); 
+        if (Thread.currentThread().getName().equals("conexion"))Thread.sleep(8000); //para dormir conexion 
+        if (Thread.currentThread().getName().equals("impresion "))Thread.sleep(6000); //para dormir impresion 
+       if (Thread.currentThread().getName().equals("guardar"))Thread.sleep(8000); //para dormir guardar
         System.out.println(Thread.currentThread().getName()); 
+        
+                           } catch(Exception e){}  // cierra try 
         
         
     }
